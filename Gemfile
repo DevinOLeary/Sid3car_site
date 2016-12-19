@@ -49,3 +49,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Zurb Foundation
 gem 'foundation-rails'
+
+# rails_12factor
+gem 'rails_12factor', group: :production
