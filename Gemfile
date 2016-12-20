@@ -52,3 +52,6 @@ gem 'foundation-rails'
 
 # rails_12factor
 gem 'rails_12factor', group: :production
+
+# mail_form
+gem 'mail_form'
