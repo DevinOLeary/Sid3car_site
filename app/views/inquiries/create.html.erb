@@ -1,0 +1,8 @@
+<div>
+  <% flash.each do |key, value| %>
+    <div>
+      <p class="form-back"><%= link_to 'Back', root_path %><p>
+        <%= value %>
+    </div>
+  <% end %>
+</div>
