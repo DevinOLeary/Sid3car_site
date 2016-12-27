@@ -20,7 +20,7 @@ class Inquiry < ApplicationRecord
   validates :email,
     presence: true
 
-  validates :content,
+  validates :message,
     presence: true
 
 
