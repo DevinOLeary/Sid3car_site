@@ -1,14 +1,29 @@
-<div class="col-xs-10 col-xs-offset-1">
+<div class="">
   <%= link_to "Back", root_path, class: 'back' %>
   <h3>Send Us a Message</h3>
+  <div class="alert">
+    <%= flash[:error] %>
+  </div>
 
-  <%= simple_form_for @inquiry do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div>
-      </br>
-      <%= f.submit 'Send message', :class=> "btn btn-primary" %>
+  <%= form_for @inquiry do |f| %>
+  <fieldset>
+    <div class="">
+      <%= f.text_field :name, placeholder: "Name" %>
     </div>
-  <% end %>
+
+    <div class="">
+      <%= f.email_field :email, placeholder: "Email"%>
+    </div>
+
+    <div class="">
+      <%= f.text_area :message, placeholder: "Message"%>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="">
+      <%= f.submit "Send" %>
+    </div>
+  </fieldset>
+<% end %>
 </div>
