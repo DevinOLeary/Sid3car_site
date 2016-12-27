@@ -1,14 +1,14 @@
 class InquiriesController < ApplicationController
-  def index
-  end
+
   def new
     @inquiry = Inquiry.new
   end
 
 def create
   @inquiry = Inquiry.new(allowed_params)
-  if @inquiry.save
-    flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+  if @inquiry.valid?
+    InquiryMailer.new_inquiry(@inquiry).deliver
+    redirect_to root_path, notice: "Your messages has been sent."
   else
     flash.now[:error] = 'Cannot send message.'
     render :new

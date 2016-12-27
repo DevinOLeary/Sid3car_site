@@ -1,4 +1,18 @@
 class Inquiry < ApplicationRecord
-  validates :name, presence: true, length: {maximum: 50, minimum: 1 }
-  validates :email, presence: true, length: {maximum: 50, minimum: 6}
+
+  include ActiveModel::Model
+  include ActiveModel::Conversion
+  include ActiveModel::Validations
+
+    attr_accessor :name, :email, :content
+
+    validates :name,
+      presence: true
+
+    validates :email,
+      presence: true
+
+    validates :content,
+      presence: true
+
 end

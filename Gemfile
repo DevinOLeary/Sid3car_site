@@ -60,4 +60,7 @@ gem 'mail_form'
 gem 'simple_form'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '>= 3.2.3'
+
+# Figaro for security
+gem "figaro"

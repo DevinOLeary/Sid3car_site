@@ -1,7 +1,8 @@
-<div align="center">
+<div class="col-xs-10 col-xs-offset-1">
+  <%= link_to "Back", root_path, class: 'back' %>
   <h3>Send Us a Message</h3>
 
-  <%= simple_form_for @inquiry, :html => {:class => 'form-horizontal' } do |f| %>
+  <%= simple_form_for @inquiry do |f| %>
     <%= f.input :name, :required => true %>
     <%= f.input :email, :required => true %>
     <%= f.input :message, :as => :text, :required => true %>

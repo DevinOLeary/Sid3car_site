@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
 
-  match '/inquiries',     to: 'inquiries#new',             via: 'get'
+  get '/inquiries', to: 'inquiries#new', as: 'inquiries'
+  post '/inquiries', to: 'inquiries#create'
 
   resources :pages
-  resources :inquiries 
+  resources :inquiries
 
 end
