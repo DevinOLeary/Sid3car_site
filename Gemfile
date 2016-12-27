@@ -53,14 +53,8 @@ gem 'foundation-rails'
 # rails_12factor
 gem 'rails_12factor', group: :production
 
-# mail_form
-gem 'mail_form'
-
-# simple_form
-gem 'simple_form'
-# Bootstrap
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2.3'
-
 # Figaro for security
 gem "figaro"
+
+# Annotate
+gem 'annotate'

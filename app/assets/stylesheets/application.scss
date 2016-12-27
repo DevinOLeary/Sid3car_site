@@ -13,10 +13,8 @@
 
 
  */
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "settings";
+ 
+@import "foundation_and_overrides";
 @import "vars";
 @import "alerts";
 @import "style";
