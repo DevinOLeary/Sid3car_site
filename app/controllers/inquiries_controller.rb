@@ -1,6 +1,5 @@
 class InquiriesController < ApplicationController
-  def index
-  end
+
   def new
     @inquiry = Inquiry.new
   end

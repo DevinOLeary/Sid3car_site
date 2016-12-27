@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: %("#{name}" <#{email}>)
   :subject => "User contact form",
-  :to => "contact@sid3car.com",
+  :to => "deoleary@indiana.edu",
   layout 'mailer'
 end
