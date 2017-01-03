@@ -1,8 +1,5 @@
 //base
-body {
-  font-family: 'avenir', sans-serif;
-  color: $text;
-}
+
 
 //masthead homepage
 .masthead-background {
@@ -57,6 +54,42 @@ body {
 
 .fuel {
   background-color: $background-grey;
+  .to-link {
+    color: $blue-link;
+  }
+}
+
+.work-preview {
+  background-color: $background-blue;
+  color:$inverse;
+  padding:100px;
+  li {
+    padding:15px;
+  }
+  h3 {
+    font-weight:200;
+    line-height:99%;
+    font-size: 29px;
+  }
+  h6 {
+    color: $blue-light;
+    font-weight:500;
+    font-size: 14px;
+  }
+  p {
+    font-weight:400;
+    font-size: 19px;
+  }
+  .feature-work {
+    background-color: $blue-dark;
+    .button {
+      color: $blue-link;
+      font-size: 20px;
+    }
+    .button:hover {
+      background-color:$inverse;
+    }
+  }
 }
 //dropdown menus
 .dropdown {
@@ -65,12 +98,14 @@ body {
   }
   .border-white {
     border: 2px solid $inverse;
+    border-radius:2px;
     padding: 2px;
     font-weight:lighter;
   }
   .button {
     padding: 17px;
-    box-shadow: 0px 2px 2px;
+    box-shadow: 0px 2px 2px $black;
+    border-radius: 2px;
   }
   .button:hover {
     background-color: $background-orange;

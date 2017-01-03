@@ -3,9 +3,11 @@
   display:flex;
   justify-content: space-between;
   flex-direction:column;
-
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 110%;
+}
 //Masthead Homepage
 .top-bar-right {
   margin-top:1em;
@@ -32,6 +34,7 @@
 
 .msg {
   p {
+    text-align: center;
     display:inline-block;
     width:75%;
     margin:70px auto;
@@ -40,12 +43,30 @@
 
 .fuel {
   article{
-    width:550px;
+    width:200px;
     margin-left:10%;
     padding-top:80px;
-    padding-bottom:80px;
+    padding-bottom:100px;
+    p {
+      line-height: normal;
+    }
   }
 
+}
+.work-preview {
+  height: 1650px;
+  li {
+    margin:1em;
+  }
+  p {
+    width:90%;
+  }
+  .feature-work {
+    .button {
+      width:95%;
+      margin:8px;
+    }
+  }
 }
 
 //form
@@ -85,5 +106,8 @@
   }
   .cta {
     margin-top:100px;
+  }
+  .fuel article {
+    width:560px;
   }
 }

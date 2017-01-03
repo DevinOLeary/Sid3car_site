@@ -20,3 +20,13 @@
 @import "style";
 @import "layout";
 @import "figures";
+
+ul, li {
+  text-indent: none;
+  list-style-type: none;
+}
+body {
+  font-family: 'avenir', sans-serif;
+  color: $text;
+
+}
