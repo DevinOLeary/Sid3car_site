@@ -58,3 +58,6 @@ gem "figaro"
 
 # Annotate
 gem 'annotate'
+
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'activeadmin', github: 'activeadmin'
