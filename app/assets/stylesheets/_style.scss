@@ -90,6 +90,15 @@
     }
   }
 }
+
+.testimonial {
+  background-color: $background-dark-grey;
+  p {
+    color:$inverse;
+    font-size: 35px;
+    font-weight:lighter;
+  }
+}
 //dropdown menus
 .dropdown {
   li {

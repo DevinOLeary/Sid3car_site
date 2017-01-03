@@ -70,6 +70,24 @@ h1, h2, h3, h4, h5, h6, p {
     }
   }
 }
+.lean {
+  text-align:center;
+  padding-bottom:200px;
+  div {
+    width:70%;
+    margin:50px auto;
+  }
+}
+.testimonial {
+  height:373px;
+  div {
+    margin: 200px;
+  }
+  p {
+    display:inline-block;
+    width:60%;
+  }
+}
 
 //form
 .form-box {
@@ -112,6 +130,7 @@ h1, h2, h3, h4, h5, h6, p {
   .fuel article {
     width:560px;
   }
+  .lean div {width:50%;}
 }
 
 @media screen and (min-width: 1025px) {
