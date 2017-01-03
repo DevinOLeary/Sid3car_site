@@ -1,22 +1,23 @@
 //base
 body {
   font-family: 'avenir', sans-serif;
+  color: $text;
 }
 
 //masthead homepage
 .masthead-background {
-  background-color: $orange-mask;
+  background-color: $background-orange;
   height:700px;
 }
 .top-bar, .top-bar ul {
-  background-color: $orange-mask;
+  background-color: $background-orange;
 }
 .menu {
   color:$inverse;
-  background:$orange-mask;
+  background:$background-orange;
   transition:.4s;
   li {
-      background-color: $orange-mask;
+      background-color: $background-orange;
       font-size:20px;
       display:inline-block;
       padding: 2px;
@@ -28,7 +29,7 @@ body {
 }
 
 .top-bar {
-  background-color:$orange-mask;
+  background-color:$background-orange;
 }
 .statement {
   margin-left: 10%;
@@ -45,6 +46,18 @@ body {
   }
 }
 
+//text bodies
+
+.msg {
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+}
+
+.fuel {
+  background-color: $background-grey;
+}
 //dropdown menus
 .dropdown {
   li {
@@ -60,7 +73,7 @@ body {
     box-shadow: 0px 2px 2px;
   }
   .button:hover {
-    background-color: $orange-mask;
+    background-color: $background-orange;
     box-shadow: inset 0px 0px 0px 1px $inverse;
   }
   .vertical {
@@ -91,5 +104,8 @@ body {
   }
   .masthead-background {
     height: 600px;
+  }
+  .msg p {
+    font-size:30px;
   }
 }

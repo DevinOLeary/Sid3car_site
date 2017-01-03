@@ -28,6 +28,25 @@
 .dropdown {
   margin-bottom: 1em;
 }
+//bodies of text
+
+.msg {
+  p {
+    display:inline-block;
+    width:75%;
+    margin:70px auto;
+  }
+}
+
+.fuel {
+  article{
+    width:550px;
+    margin-left:10%;
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+
+}
 
 //form
 .form-box {
