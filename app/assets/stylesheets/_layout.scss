@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 .work-preview {
-  height: 3000px;
+  height: 3300px;
   padding: 8%;
   li {
     margin:.5em 0px;
@@ -116,6 +116,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (min-width: 1025px) {
     .work-preview {
-      height:1750px;
+      height:1700px;
+      h6 {
+        margin-bottom: 1.3em;
+      }
     }
 }

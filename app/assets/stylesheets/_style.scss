@@ -68,22 +68,22 @@
   h3 {
     font-weight:200;
     line-height:99%;
-    font-size: 29px;
+    font-size: 26px;
   }
   h6 {
     color: $blue-light;
     font-weight:500;
-    font-size: 14px;
+    font-size: 10px;
   }
   p {
     font-weight:400;
-    font-size: 19px;
+    font-size: 16px;
   }
   .feature-work {
     background-color: $blue-dark;
     .button {
       color: $blue-link;
-      font-size: 20px;
+      font-size: 14px;
     }
     .button:hover {
       background-color:$inverse;
@@ -141,5 +141,13 @@
   }
   .msg p {
     font-size:30px;
+  }
+}
+@media screen and (min-width: 1025px ){
+  .work-preview {
+    p {font-size: 19px;}
+    h3 {font-size: 29px;}
+    h6 {font-size: 14px;}
+    .button {font-size: 20px;}
   }
 }
