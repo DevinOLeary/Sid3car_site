@@ -1,9 +1,95 @@
-a {
-  color: $sid3car-orange;
-  font-size: 1.3em;
+//base
+body {
+  font-family: 'avenir', sans-serif;
 }
 
-a:hover {
-  color: $sid3car-orange;
+//masthead homepage
+.masthead-background {
+  background-color: $orange-mask;
+  height:700px;
+}
+.top-bar, .top-bar ul {
+  background-color: $orange-mask;
+}
+.menu {
+  color:$inverse;
+  background:$orange-mask;
+  transition:.4s;
+  li {
+      background-color: $orange-mask;
+      font-size:20px;
+      display:inline-block;
+      padding: 2px;
+      margin:0;
+      .inverse {
+        color:$inverse;
+      }
+    }
+}
+
+.top-bar {
+  background-color:$orange-mask;
+}
+.statement {
+  margin-left: 10%;
+  margin-top:10%;
+  width: 80%;
+    p {
+    display:block;
+    color:$inverse;
+    font-size:28px;
+    line-height: 60px;
+  }
+  span {
+    color: $inverse-transparent;
+  }
+}
+
+//dropdown menus
+.dropdown {
+  li {
+    width: 200px;
+  }
+  .border-white {
+    border: 2px solid $inverse;
+    padding: 2px;
+    font-weight:lighter;
+  }
+  .button {
+    padding: 17px;
+    box-shadow: 0px 2px 2px;
+  }
+  .button:hover {
+    background-color: $orange-mask;
+    box-shadow: inset 0px 0px 0px 1px $inverse;
+  }
+  .vertical {
+    border:none;
+    width:200px;
+  li {
+    background-color:$clear;
+  }
+}
+}
+.dropdown.menu  li.is-dropdown-submenu-parent  a::after {
+    border-top-color:$inverse;
 }
 //buttons
+.button {
+  background-color:$inverse;
+}
+
+.orange {
+  color: $sid3car-orange;
+}
+
+//media-queries
+@media screen and (min-width: 700px) {
+  .statement {
+    width: 50%;
+    p { font-size: 52px;}
+  }
+  .masthead-background {
+    height: 600px;
+  }
+}

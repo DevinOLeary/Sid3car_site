@@ -1,5 +1,47 @@
-<hgroup class="center">
-  <h1>Sid3car</h1>
-    <br />
-  <%= link_to 'Contact', inquiries_path %>
-</hgroup>
+<header class="masthead-background">
+  <nav class="top-bar">
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><%= link_to 'About', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="statement">
+    <p>We make <span>custom software</span> for subject matter experts.</p>
+  </div>
+  <div class="cta">
+    <ul class="dropdown menu flex-center" data-dropdown-menu>
+      <li class="border-white">
+        <a href="#" class="inverse">my business</a>
+        <ul class="menu vertical">
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+        </ul>
+      </li>
+      <li class="border-white">
+        <a href="#" class="inverse">needs a new</a>
+        <ul class="menu vertical">
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+        </ul>
+      </li>
+      <li class="border-white">
+        <a href="#" class="inverse">web application</a>
+        <ul class="menu vertical">
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+          <li><a href='#' class="inverse">One</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="button orange">Get started</a>
+      </li>
+    </ul>
+  </div>
+</header>

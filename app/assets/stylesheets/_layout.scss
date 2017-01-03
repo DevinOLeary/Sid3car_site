@@ -1,4 +1,15 @@
+//general
+.flex-center {
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
 
+}
+
+//Masthead Homepage
+.top-bar-right {
+  margin-top:1em;
+}
 
 .center {
   text-align:center;
@@ -7,6 +18,15 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.cta {
+  margin:50px auto;
+  ul li {
+    margin:5px;
+  }
+}
+.dropdown {
+  margin-bottom: 1em;
 }
 
 //form
@@ -34,4 +54,17 @@
 .back {
   display:block;
   margin-top:3%;
+}
+
+@media screen and (min-width: 700px) {
+  .top-bar-right {
+    margin-right: 10%;
+    margin-top:2em;
+  }
+  .flex-center {
+    flex-direction: row;
+  }
+  .cta {
+    margin-top:100px;
+  }
 }
