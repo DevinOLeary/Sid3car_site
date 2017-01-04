@@ -38,9 +38,6 @@ h2 {
 
 //dropdown menus
 .dropdown {
-  li {
-    width: 200px;
-  }
   .border-white {
     border: 2px solid $inverse;
     border-radius:1px;
@@ -59,7 +56,6 @@ h2 {
   }
   .vertical {
     border:none;
-    width:200px;
   li {
     background-color:$clear;
   }
@@ -154,6 +150,11 @@ h2 {
 }
 .testimonial {
   background-color: $background-dark-grey;
+  span {
+    font-size:120px;
+    font-family:cursive;
+    color:$grey-medium;
+  }
   p {
     color:$inverse;
     font-size: 22px;
@@ -189,6 +190,21 @@ footer {
     color: $inverse;
     font-size: 21px;
   }
+}
+.menu-icon span {
+  color: $inverse;
+  font-size:18px;
+}
+.menu-icon:hover {
+  cursor: pointer;
+}
+.exit span {
+  color:$grey-dark;
+  display:inline-block;
+  font-size:32px;
+}
+.exit:hover {
+  cursor: pointer;
 }
 
 //displays
