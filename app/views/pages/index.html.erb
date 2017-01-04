@@ -1,7 +1,18 @@
 <header class="masthead-background">
-  <nav class="top-bar">
+  <nav class="top-bar" >
     <div class="top-bar-right">
-      <ul class="menu top-menu">
+      <ul class="menu top-menu" id="topNav">
+        <li><%= link_to 'About', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
+      </ul>
+      <div class="menu-icon hide"><span></span></div>
+    </div>
+    <div class="mobile-menu hide" id="mobileMenu">
+      <div class="mobile-logo"><img src=""/></div>
+      <ul>
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
         <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
@@ -9,6 +20,7 @@
         <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
       </ul>
     </div>
+
   </nav>
   <div class="statement">
     <p>We make <span>custom software</span> for subject matter experts.</p>

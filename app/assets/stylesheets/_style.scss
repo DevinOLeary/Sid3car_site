@@ -70,7 +70,17 @@ h2 {
 }
 
 
-
+//mobile menu
+.mobile-menu {
+  background-color: $inverse;
+  ul {
+    background-color: $inverse;
+  }
+  li a{
+    color: $grey-dark;
+    font-size:36px;
+  }
+}
 
 //text bodies
 
@@ -179,6 +189,11 @@ footer {
     color: $inverse;
     font-size: 21px;
   }
+}
+
+//displays
+.hide {
+  display:none;
 }
 //media-queries
 @media screen and (min-width: 700px) {
