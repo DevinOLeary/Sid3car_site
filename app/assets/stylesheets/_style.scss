@@ -1,5 +1,9 @@
 //base
-
+h2 {
+  font-size:28px;
+  font-weight: 300;
+  margin-bottom:1em;
+}
 
 //masthead homepage
 .masthead-background {
@@ -9,7 +13,7 @@
 .top-bar, .top-bar ul {
   background-color: $background-orange;
 }
-.menu {
+.top-menu {
   color:$inverse;
   background:$background-orange;
   transition:.4s;
@@ -22,12 +26,54 @@
       .inverse {
         color:$inverse;
       }
+      .button {
+        font-size:20px;
+      }
     }
 }
 
 .top-bar {
   background-color:$background-orange;
 }
+
+//dropdown menus
+.dropdown {
+  li {
+    width: 200px;
+  }
+  .border-white {
+    border: 2px solid $inverse;
+    border-radius:1px;
+    padding: 2px;
+    font-weight:lighter;
+  }
+  .button {
+    padding: 15px;
+    box-shadow: 0px 2px 2px $black;
+    border-radius: 1px;
+  }
+  .button:hover {
+    background-color: $background-orange;
+    box-shadow: inset 0px 0px 0px 1px $inverse;
+    border-radius: 1px;
+  }
+  .vertical {
+    border:none;
+    width:200px;
+  li {
+    background-color:$clear;
+  }
+}
+}
+.dropdown.menu  li.is-dropdown-submenu-parent  a::after {
+    border-top-color:$inverse;
+}
+
+
+
+
+//text bodies
+
 .statement {
   margin-left: 10%;
   margin-top:10%;
@@ -43,8 +89,6 @@
   }
 }
 
-//text bodies
-
 .msg {
   p {
     font-size: 18px;
@@ -54,8 +98,8 @@
 
 .fuel {
   background-color: $background-grey;
-  .to-link {
-    color: $blue-link;
+  p {
+    font-size: 16px;
   }
 }
 
@@ -90,48 +134,56 @@
     }
   }
 }
-//dropdown menus
-.dropdown {
-  li {
-    width: 200px;
+.lean {
+  p {
+    font-size: 14px;
   }
-  .border-white {
-    border: 2px solid $inverse;
-    border-radius:2px;
-    padding: 2px;
+  .meet-link {
+    font-size: 17px;
+  }
+}
+.testimonial {
+  background-color: $background-dark-grey;
+  p {
+    color:$inverse;
+    font-size: 22px;
     font-weight:lighter;
   }
-  .button {
-    padding: 17px;
-    box-shadow: 0px 2px 2px $black;
-    border-radius: 2px;
-  }
-  .button:hover {
-    background-color: $background-orange;
-    box-shadow: inset 0px 0px 0px 1px $inverse;
-  }
-  .vertical {
-    border:none;
-    width:200px;
+}
+footer {
+  background-color: $background-footer;
   li {
-    background-color:$clear;
+    color:$footer-dark-text;
+    font-size:19px;
+  }
+  p {
+    color:$footer-light-text;
+    font-size:19px;
   }
 }
-}
-.dropdown.menu  li.is-dropdown-submenu-parent  a::after {
-    border-top-color:$inverse;
-}
+
+
 //buttons
 .button {
   background-color:$inverse;
 }
-
+.to-link {
+  color: $blue-link;
+}
 .orange {
   color: $sid3car-orange;
 }
-
+.start {
+  .button {
+    background-color: $background-orange;
+    color: $inverse;
+    font-size: 21px;
+  }
+}
 //media-queries
 @media screen and (min-width: 700px) {
+  //base
+  h2 {font-size: 36px;}
   .statement {
     width: 50%;
     p { font-size: 52px;}
@@ -142,6 +194,15 @@
   .msg p {
     font-size:30px;
   }
+  .fuel p {font-size:21px;}
+  .lean {
+    p { font-size: 20px;}
+    .meet-link {font-size: 21px;}
+  }
+  .testimonial p {
+    font-size:35px;
+  }
+
 }
 @media screen and (min-width: 1025px ){
   .work-preview {

@@ -2,7 +2,10 @@
 $sid3car-orange: #ef5b22;
 $orange-mask: #FD8F61;
 $text: #3E474F;
-$grey: #F7F7F7;
+$grey-light: #F7F7F7;
+$grey: #EDEFF0;
+$grey-medium: #60676D;
+$grey-dark: #3E474F;
 $inverse: rgb(255,255,255);
 $inverse-transparent: rgba(255,255,255,0.6);
 $clear: rgba(0,0,0,0);
@@ -13,9 +16,16 @@ $blue-dark: #1E7ADB;
 $blue-light: #CBE9FF;
 
 
-$background-grey: $grey;
+$background-grey: $grey-light;
 $background-orange: $orange-mask;
 $background-blue: $blue;
+$background-dark-grey: $grey-dark;
+
+
+// footer colors
+$background-footer: $grey;
+$footer-light-text: #979CA0;
+$footer-dark-text: $grey-medium;
 
 
 //Fonts
