@@ -1,7 +1,19 @@
 <header class="masthead-background">
-  <nav class="top-bar">
+  <nav class="top-bar" >
     <div class="top-bar-right">
-      <ul class="menu top-menu">
+      <ul class="menu top-menu" id="desktopMenu">
+        <li><%= link_to 'About', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
+      </ul>
+      <div class="menu-icon hide" id="hamburger"><span>Menu</span></div>
+    </div>
+    <div class="mobile-menu hide" id="mobileMenu">
+      <div class="mobile-logo"><img src=""/></div>
+      <aside class="exit" id="exit"><span>X<span></aside>
+      <ul>
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
         <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
@@ -9,12 +21,13 @@
         <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
       </ul>
     </div>
+
   </nav>
   <div class="statement">
     <p>We make <span>custom software</span> for subject matter experts.</p>
   </div>
   <div class="cta">
-    <ul class="dropdown menu flex-center top-menu" data-responsive-menu>
+    <ul class="dropdown menu flex-center top-menu" data-dropdown-menu>
       <li class="border-white">
         <a href="#" class="inverse">my business</a>
         <ul class="menu vertical top-menu">
@@ -200,7 +213,7 @@
 </section>
 <section class="testimonial">
   <div>
-    <p>Sid3car delivered San Fransisco-style software without any of the
+      <p class="quote-container"><span class="quote">"</span>Sid3car delivered San Fransisco-style software without any of the
       traditional agency headache. We’ll be back!</p>
       <br />
     <p>Mathew Anderson | Adproval</p>

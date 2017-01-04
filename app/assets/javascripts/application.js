@@ -17,3 +17,31 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+
+//at screen width, menu changes to hamburger menu
+function mobileViewUpdate() {
+  if ($(window).width() < 700) {
+    $("#desktopMenu").addClass('hide');
+    $("#hamburger").removeClass('hide');
+  }
+  else {
+    $("#desktopMenu").removeClass('hide');
+    $("#hamburger").addClass('hide');
+  }
+}
+$(window).load(mobileViewUpdate);
+$(window).resize(mobileViewUpdate);
+ //on hamburger click, menu opens
+$(function() {
+  $("#hamburger").on('click', function() {
+    $("#mobileMenu").removeClass('hide');
+  });
+});
+ //on exit click, menu closes
+$(function() {
+  $("#exit").on('click', function() {
+    $("#mobileMenu").addClass('hide');
+  });
+});
