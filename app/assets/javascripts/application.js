@@ -22,16 +22,16 @@ $(function(){ $(document).foundation(); });
 
 //at screen width, menu changes to hamburger menu
 function mobileViewUpdate() {
+  $("#desktopMenu").removeClass('hide');
+  $("#hamburger").addClass('hide');
+
   if ($(window).width() < 700) {
     $("#desktopMenu").addClass('hide');
     $("#hamburger").removeClass('hide');
-  }
-  else {
-    $("#desktopMenu").removeClass('hide');
-    $("#hamburger").addClass('hide');
+    return;
   }
 }
-$(window).load(mobileViewUpdate);
+$(window).on('load', mobileViewUpdate());
 $(window).resize(mobileViewUpdate);
  //on hamburger click, menu opens
 $(function() {

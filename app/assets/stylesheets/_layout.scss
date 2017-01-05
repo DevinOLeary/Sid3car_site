@@ -8,9 +8,20 @@
 h1, h2, h3, h4, h5, h6, p {
   line-height: 110%;
 }
-//Masthead Homepage
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: table;
+}
+//Masthead
 .top-bar-right {
-  margin-top:1em;
+  display:flex;
+  align-items:center;
+  width:100%;
+}
+.top-bar {
+  width: 100%;
 }
 
 .center {
@@ -36,7 +47,19 @@ h1, h2, h3, h4, h5, h6, p {
     width:100%;
   }
 }
-
+.intro {
+  width:80%;
+  margin:10% auto;
+  hgroup {
+    margin-bottom:1em;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    line-height: 30px;
+  }
+}
 //mobile menu
 
 .mobile-menu {
@@ -55,8 +78,31 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
 }
-//bodies of text
+//displays
 
+.case_display {
+  height:70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width:60vw;
+    min-width:400px;
+  }
+}
+//bodies of text
+.case_content {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding:80px 0;
+  p {
+    width:70%;
+    font-size: 16px;
+    line-height: 30px;
+}
+}
 .msg {
   p {
     text-align: center;
@@ -118,10 +164,23 @@ h1, h2, h3, h4, h5, h6, p {
       }
 
     }
-
     p {
       display:inline-block;
       width:60%;
+    }
+  }
+}
+
+.metrics-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:360px;
+  div {
+    margin: 30px;
+    h4 {
+      margin-bottom:15%;
     }
   }
 }
@@ -147,6 +206,8 @@ footer {
     padding: 8px;
   }
 }
+
+
 
 //form
 .form-box {
@@ -177,14 +238,21 @@ footer {
     width:315px;
   }
 }
+
 .menu-icon {
   float:right;
-  margin: 20px;
+  margin:20px;
 }
+
 .exit span {
   position:absolute;
   top:20px;
   right:20px;
+}
+.top-menu .subpage-contact {
+  height:40px;
+  width:155px;
+  text-align: center;
 }
 
 
@@ -198,6 +266,12 @@ footer {
   }
   .cta {
     margin-top:100px;
+  }
+  .case_display {
+    height:100vh;
+  }
+  .case_content {
+    p {font-size: 21px;}
   }
   .fuel article {
     width:560px;
