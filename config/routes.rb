@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/inquiries', to: 'inquiries#new', as: 'inquiries'
   post '/inquiries', to: 'inquiries#create'
 
+  get '/case', to: 'pages#case_study', as: 'case_study'
   resources :pages
   resources :inquiries
 

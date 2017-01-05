@@ -65,6 +65,16 @@ h2 {
     border-top-color:$inverse;
 }
 
+.intro {
+  h1 {
+    font-weight: 300;
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
 
 //mobile menu
 .mobile-menu {
@@ -77,9 +87,14 @@ h2 {
     font-size:36px;
   }
 }
-
+//displays
+.case_display {
+  background-color: $background-grey;
+}
 //text bodies
-
+.intro {
+  color: $inverse;
+}
 .statement {
   margin-left: 10%;
   margin-top:10%;
@@ -172,7 +187,27 @@ footer {
     font-size:19px;
   }
 }
-
+.metrics-container {
+  background-color: $background-dark-grey;
+  h4 {
+    color:$grey-medium;
+    font-weight: 300;
+    position:relative;
+  }
+  h4:after {
+    content:'';
+    width:40px;
+    height:1px;
+    background:$grey-medium;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+  }
+  ul li {
+    color: $inverse;
+    font-size:21px;
+  }
+}
 
 //buttons
 .button {
@@ -182,7 +217,7 @@ footer {
   color: $blue-link;
 }
 .orange {
-  color: $sid3car-orange;
+  color: $orange-text;
 }
 .start {
   .button {
@@ -191,9 +226,9 @@ footer {
     font-size: 21px;
   }
 }
-.menu-icon span {
+.menu-icon {
   color: $inverse;
-  font-size:18px;
+  font-size:21px;
 }
 .menu-icon:hover {
   cursor: pointer;
@@ -205,6 +240,13 @@ footer {
 }
 .exit:hover {
   cursor: pointer;
+}
+
+.top-menu .subpage-contact {
+  background-color: $inverse;
+}
+.top-menu .subpage-contact:hover {
+  color: $orange-text;
 }
 
 //displays
@@ -222,6 +264,9 @@ footer {
   .masthead-background {
     height: 600px;
   }
+  .intro {
+    p {font-size: 25px;}
+  }
   .msg p {
     font-size:30px;
   }
@@ -233,6 +278,9 @@ footer {
   .testimonial p {
     font-size:35px;
   }
+  .metrics-container {
+    ul li {font-size: 36px;}
+  }
 
 }
 @media screen and (min-width: 1025px ){
@@ -241,5 +289,9 @@ footer {
     h3 {font-size: 29px;}
     h6 {font-size: 14px;}
     .button {font-size: 20px;}
+  }
+  .intro {
+    p {font-size: 25px;}
+    h1 {font-size: 48px;}
   }
 }

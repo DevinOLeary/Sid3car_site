@@ -3,19 +3,19 @@
     <div class="top-bar-right">
       <ul class="menu top-menu" id="desktopMenu">
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
         <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
         <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
       </ul>
-      <div class="menu-icon hide" id="hamburger"><span>Menu</span></div>
     </div>
+    <div class='menu-icon' id='hamburger'>Menu</div>
     <div class="mobile-menu hide" id="mobileMenu">
       <div class="mobile-logo"><img src=""/></div>
       <aside class="exit" id="exit"><span>X<span></aside>
       <ul>
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
         <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
         <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
@@ -134,7 +134,7 @@
             clean water non-profit increased donations by 40%.  </p>
         </li>
         <li class="feature-work">
-          <h3>StoreOptics/h3>
+          <h3>StoreOptics</h3>
           <h6>FOOD SERVICE</h6>
 
           <p>Mobile field service management for retail stores and
