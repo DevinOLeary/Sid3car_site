@@ -129,6 +129,9 @@ h2 {
     color:$inverse;
     font-size:28px;
     line-height: 60px;
+    i {
+      font-size: 42px;
+    }
   }
   span {
     color: $inverse-transparent;
@@ -217,6 +220,11 @@ footer {
   background-color: $background-grey-transparent;
   a {
     color: $inverse;
+  }
+  .form-header {
+    h3 {
+    font-weight: 300;
+  }
   }
   h3 {
     color: $inverse;
