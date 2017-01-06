@@ -7,21 +7,10 @@
         <li><%= link_to 'Home', root_path, class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
         <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Contact', inquiries_path, class: 'HQE-background subpage-contact' %></li>
+        <li><%= link_to 'Contact', new_inquiry_path, class: 'inverse', remote: true %></li>
       </ul>
     </div>
     <div class='menu-icon hide' id='hamburger'><i>Menu</i></div>
-    <div class="mobile-menu hide" id="mobileMenu">
-      <div class="mobile-logo"><img src=""/></div>
-      <aside class="exit" id="exit"><span>X<span></aside>
-      <ul>
-        <li><%= link_to 'About', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Home', root_path, class: 'inverse' %></li>
-        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
-      </ul>
-    </div>
   </nav>
   <div class="clearfix"></div>
   <section class="intro">
