@@ -129,6 +129,9 @@ h2 {
     color:$inverse;
     font-size:28px;
     line-height: 60px;
+    i {
+      font-size: 42px;
+    }
   }
   span {
     color: $inverse-transparent;
