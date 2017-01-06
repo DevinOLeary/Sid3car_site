@@ -6,6 +6,7 @@ $grey-light: #F7F7F7;
 $grey: #EDEFF0;
 $grey-medium: #60676D;
 $grey-dark: #3E474F;
+$grey-dark-transparent:rgba(62,71,79,.95);
 $inverse: rgb(255,255,255);
 $inverse-transparent: rgba(255,255,255,0.6);
 $clear: rgba(0,0,0,0);
@@ -21,6 +22,7 @@ $background-grey: $grey-light;
 $background-orange: $orange-mask;
 $background-blue: $blue;
 $background-dark-grey: $grey-dark;
+$background-grey-transparent: $grey-dark-transparent;
 
 
 // footer colors

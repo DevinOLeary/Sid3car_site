@@ -235,20 +235,39 @@ footer {
 }
 
 .form-header {
-  width:40%;
-  margin:20px auto;
+  width:90%;
+  margin:0 auto;
+  margin-top:150px;
 }
+
 
 .form-container {
-  margin-top:10%;
-
+  position: fixed;
+  height:100vh;
+  width:100vw;
+  top:0;
+  left:0;
+  z-index: 150;
+  div {
+    text-align: center;
+  }
+  .button {
+    width:100%;
+    margin: 0 auto;
+  }
+  fieldset textarea {
+    height:130px;
+  }
 }
 //figures
-.sid3car-logo img {
+.sid3car-logo, .sid3car-logo-mobile {
   position:absolute;
   top: 30px;
   left: 35%;
+  height:50px;
+  width:120px;
 }
+
 //buttons
 .start {
   .button {
@@ -272,6 +291,12 @@ footer {
   height:40px;
   width:155px;
   text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  right:10%;
+  top: 10%;
 }
 
 
@@ -305,9 +330,15 @@ footer {
   .dropdown {
     li {max-width: 200px;}
   }
-  .sid3car-logo img {
+  .sid3car-logo{
     top: 40px;
     left: 5%;
+  }
+
+  .form-container{
+    .form-header {
+      width:45%;
+    }
   }
 }
 

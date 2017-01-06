@@ -12,16 +12,17 @@
     <%= csrf_meta_tags %>
   </head>
   <div class="mobile-menu hide" id="mobileMenu">
-    <div class="sid3car-logo"><%= link_to image_tag('sid3car-logo.png'), root_path %></div>
+    <div class="sid3car-logo-mobile"><% link_to root_path %></div>
     <aside class="exit" id="exit"><span>X<span></aside>
     <ul>
       <li><%= link_to 'About', '#', class: 'inverse' %></li>
       <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
       <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
       <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
-      <li data-reveal-id="myModal"><%= link_to 'Contact', new_application_path, class: 'inverse' %></li>
+      <li data-reveal-id="myModal"><%= link_to 'Contact', new_inquiry_path, class: 'inverse', remote: true %></li>
     </ul>
   </div>
+
 
     <%= yield %>
 

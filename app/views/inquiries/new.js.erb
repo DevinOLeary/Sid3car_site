@@ -1,0 +1,5 @@
+$("body").append("<%= j render 'new' %>");
+$("#close-modal").click(function(e){
+  $("#contact-modal").remove();
+  e.preventDefault();
+})

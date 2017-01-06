@@ -1,0 +1,38 @@
+<div class="form-container" id="contact-modal">
+  <a href="#" class="modal-close" id="close-modal">Close</a>
+  <hgroup class="form-header flex-center">
+    <h3>Ready, set, code! Send us a note below, or call
+<span>+1 (812) 322-7392</span> to speak with us about your project.
+We look forward to hearing from you.</h3>
+  </hgroup>
+  <div class="flex-center">
+    <div class="small-12 large-10 column">
+      <!-- validation error -->
+      <div class="alert row small-6 column">
+        <%= flash[:error] %>
+      </div>
+
+      <%= form_for @inquiry do |f| %>
+      <fieldset>
+        <div class="row small-10 large-10 column">
+          <%= f.text_field :name, placeholder: "Name" %>
+        </div>
+
+        <div class="row small-10 large-10 column">
+          <%= f.email_field :email, placeholder: "Email address"%>
+        </div>
+
+        <div class="row small-10 large-10 column">
+          <%= f.text_area :message, placeholder: "Project description"%>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="row small-10 large-10 column">
+          <%= f.submit "Send", class: "button expand" %>
+        </div>
+      </fieldset>
+    <% end %>
+    </div>
+  </div>
+</div>

@@ -29,6 +29,7 @@ function mobileViewUpdate() {
   } else {
     $("#desktopMenu").removeClass('hide');
     $("#hamburger").addClass('hide');
+    $("#mobileMenu").addClass('hide');
   }
 }
 $(window).on('load', mobileViewUpdate());

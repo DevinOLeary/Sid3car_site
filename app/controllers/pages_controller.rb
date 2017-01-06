@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def index
+    @inquiry = Inquiry.new
   end
 
 

@@ -4,6 +4,9 @@ h2 {
   font-weight: 300;
   margin-bottom:1em;
 }
+ a:hover {
+   cursor: pointer;
+ }
 
 //masthead homepage
 .masthead-background {
@@ -62,10 +65,8 @@ h2 {
   }
   .vertical {
     border:none;
-  li {
-    background-color:$clear;
+    background-color:$background-orange;
   }
-}
 }
 .dropdown.menu  li.is-dropdown-submenu-parent  a::after {
     border-top-color:$inverse;
@@ -211,18 +212,39 @@ footer {
     font-size:19px;
   }
 }
+//forms
+.form-container {
+  background-color: $background-grey-transparent;
+  a {
+    color: $inverse;
+  }
+  h3 {
+    color: $inverse;
+    font-size: 22px;
+    span {
+      color: $orange-text;
+    }
+  }
+  .button {
+    background-color: $background-orange;
+    color: $inverse;
+  }
+}
 
 //figures
-.em-fire {
-  font-size:24px;
-  margin-left:10px;
-  margin-bottom:10px;
+.emoji {
+  margin-left: 10px;
 }
-.em-eyeglasses {
-  font-size:26px;
-  margin-left:20px;
+.sid3car-logo {
+  background-image: url("Sid3car-white.png");
+  background-repeat: no-repeat;
+  background-size: 120px 40px;
 }
-
+.sid3car-logo-mobile {
+  background-image: url("sid3car-logo.png");
+  background-repeat: no-repeat;
+  background-size: 120px 40px;
+}
 
 //buttons
 .button {
@@ -304,7 +326,9 @@ footer {
   .metrics-container {
     ul li {font-size: 36px;}
   }
-  .em-eyeglasses {font-size: 40px;}
+  .form-container {
+    h3 {font-size: 29px;}
+  }
 
 }
 @media screen and (min-width: 1025px ){
