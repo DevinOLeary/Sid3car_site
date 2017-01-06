@@ -22,17 +22,19 @@ $(function(){ $(document).foundation(); });
 
 //at screen width, menu changes to hamburger menu
 function mobileViewUpdate() {
-  $("#desktopMenu").removeClass('hide');
-  $("#hamburger").addClass('hide');
 
   if ($(window).width() < 700) {
     $("#desktopMenu").addClass('hide');
     $("#hamburger").removeClass('hide');
-    return;
+  } else {
+    $("#desktopMenu").removeClass('hide');
+    $("#hamburger").addClass('hide');
   }
 }
 $(window).on('load', mobileViewUpdate());
 $(window).resize(mobileViewUpdate);
+
+
  //on hamburger click, menu opens
 $(function() {
   $("#hamburger").on('click', function() {
@@ -43,5 +45,12 @@ $(function() {
 $(function() {
   $("#exit").on('click', function() {
     $("#mobileMenu").addClass('hide');
+  });
+});
+
+//open contact modal
+$(function() {
+  $("#contact").on('click', function() {
+    $("#contactModal").removeClass('hide');
   });
 });
