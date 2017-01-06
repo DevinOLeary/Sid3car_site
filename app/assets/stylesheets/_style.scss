@@ -10,15 +10,16 @@ h2 {
   background-color: $background-orange;
   height:700px;
 }
+
 .top-bar, .top-bar ul {
-  background-color: $background-orange;
+  background-color: inherit;
 }
 .top-menu {
   color:$inverse;
-  background:$background-orange;
+  background-color:inherit;;
   transition:.4s;
   li {
-      background-color: $background-orange;
+      background-color: inherit;
       font-size:20px;
       display:inline-block;
       padding: 2px;
@@ -34,6 +35,11 @@ h2 {
 
 .top-bar {
   background-color:$background-orange;
+}
+.HQE-background{
+  background-color: $HQE-background;
+  color: $HQE-background;
+  transition: .2s;
 }
 
 //dropdown menus
@@ -91,14 +97,32 @@ h2 {
 .case_display {
   background-color: $background-grey;
 }
+.metrics-container {
+  background-color: $background-dark-grey;
+  h4 {
+    color:$grey-medium;
+    font-weight: 300;
+    position:relative;
+  }
+  h4:after {
+    content:'';
+    width:40px;
+    height:1px;
+    background:$grey-medium;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+  }
+  ul li {
+    color: $inverse;
+    font-size:21px;
+  }
+}
 //text bodies
 .intro {
   color: $inverse;
 }
 .statement {
-  margin-left: 10%;
-  margin-top:10%;
-  width: 80%;
     p {
     display:block;
     color:$inverse;
@@ -187,27 +211,18 @@ footer {
     font-size:19px;
   }
 }
-.metrics-container {
-  background-color: $background-dark-grey;
-  h4 {
-    color:$grey-medium;
-    font-weight: 300;
-    position:relative;
-  }
-  h4:after {
-    content:'';
-    width:40px;
-    height:1px;
-    background:$grey-medium;
-    position:absolute;
-    bottom:-10px;
-    left:0;
-  }
-  ul li {
-    color: $inverse;
-    font-size:21px;
-  }
+
+//figures
+.em-fire {
+  font-size:24px;
+  margin-left:10px;
+  margin-bottom:10px;
 }
+.em-eyeglasses {
+  font-size:26px;
+  margin-left:20px;
+}
+
 
 //buttons
 .button {
@@ -248,17 +263,25 @@ footer {
 .top-menu .subpage-contact:hover {
   color: $orange-text;
 }
+.white-link {
+  color: $inverse;
+}
+.white-link:hover {
+  color: $inverse;
+}
 
 //displays
 .hide {
   display:none;
+}
+.contact_modal {
+  background-color:$inverse-transparent;
 }
 //media-queries
 @media screen and (min-width: 700px) {
   //base
   h2 {font-size: 36px;}
   .statement {
-    width: 50%;
     p { font-size: 52px;}
   }
   .masthead-background {
@@ -281,6 +304,7 @@ footer {
   .metrics-container {
     ul li {font-size: 36px;}
   }
+  .em-eyeglasses {font-size: 40px;}
 
 }
 @media screen and (min-width: 1025px ){

@@ -90,7 +90,20 @@ h1, h2, h3, h4, h5, h6, p {
     min-width:400px;
   }
 }
+.contact_modal {
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+  z-index: 100;
+}
 //bodies of text
+.statement {
+  margin-left: 10%;
+  margin-top:10%;
+  width:80%;
+}
 .case_content {
   display:flex;
   flex-direction:column;
@@ -114,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .fuel {
   article{
-    width:200px;
+    width:250px;
     margin-left:10%;
     padding-top:100px;
     padding-bottom:120px;
@@ -230,6 +243,12 @@ footer {
   margin-top:10%;
 
 }
+//figures
+.sid3car-logo img {
+  position:absolute;
+  top: 30px;
+  left: 35%;
+}
 //buttons
 .start {
   .button {
@@ -254,6 +273,7 @@ footer {
   width:155px;
   text-align: center;
 }
+
 
 
 @media screen and (min-width: 700px) {
@@ -285,9 +305,17 @@ footer {
   .dropdown {
     li {max-width: 200px;}
   }
+  .sid3car-logo img {
+    top: 40px;
+    left: 5%;
+  }
 }
 
+
 @media screen and (min-width: 1025px) {
+  .statement {
+    width:45%;
+  }
     .work-preview {
       height:1700px;
       h6 {

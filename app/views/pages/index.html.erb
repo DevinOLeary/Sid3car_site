@@ -1,5 +1,6 @@
 <header class="masthead-background">
-  <nav class="top-bar" >
+  <div class="sid3car-logo"><%= link_to image_tag('Sid3car-white.png'), root_path %></div>
+  <nav class="top-bar">
     <div class="top-bar-right">
       <ul class="menu top-menu" id="desktopMenu">
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
@@ -9,22 +10,11 @@
         <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
       </ul>
     </div>
-    <div class='menu-icon' id='hamburger'>Menu</div>
-    <div class="mobile-menu hide" id="mobileMenu">
-      <div class="mobile-logo"><img src=""/></div>
-      <aside class="exit" id="exit"><span>X<span></aside>
-      <ul>
-        <li><%= link_to 'About', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
-        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
-        <li><%= link_to 'Contact', inquiries_path, class: 'inverse' %></li>
-      </ul>
-    </div>
+    <div class='menu-icon hide' id='hamburger'><i class="em em-hamburger"></i></div>
 
   </nav>
   <div class="statement">
-    <p>We make <span>custom software</span> for subject matter experts.</p>
+    <p>We make <span>custom software</span> for subject matter experts.<i class="em em-eyeglasses"></i></p>
   </div>
   <div class="cta">
     <ul class="dropdown menu flex-center top-menu" data-dropdown-menu>
@@ -64,7 +54,7 @@
 </section>
 <section class="fuel">
   <article>
-    <h2>Fuel for your fire.</h2>
+    <h2>Fuel for your fire.<i class="em em-fire"></i></h2>
     <p>We’re a small team of designers, developers and product strategists
       passionate about building and scaling organization-altering software.
       Just this year, our products have helped clients attract nearly 200,000
