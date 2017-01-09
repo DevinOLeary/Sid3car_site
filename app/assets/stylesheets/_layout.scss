@@ -8,10 +8,7 @@
 h1, h2, h3, h4, h5, h6, p {
   line-height: 110%;
 }
-body {
-  width:100%;
-  height:100%;
-}
+
 .clearfix {
   clear: both;
   content: "";
@@ -147,7 +144,7 @@ body {
 
 }
 .work-preview {
-  height: 3400px;
+  height: 3300px;
   padding: 8%;
   li {
     margin:.5em 0px;
