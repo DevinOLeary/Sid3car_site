@@ -134,8 +134,9 @@ h2 {
     font-size:28px;
     line-height: 50px;
   }
-  a {
+  div {
     font-size:26px;
+    color:$inverse;
   }
   .transparent-statement {
     color: $inverse-transparent;
