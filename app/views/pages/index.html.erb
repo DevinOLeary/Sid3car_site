@@ -1,8 +1,8 @@
 <header class="masthead-background">
-  <div class="sid3car-logo"><% link_to root_path %></div>
+  <div><%= link_to "", root_path, class: "sid3car-logo" %></div>
   <nav class="top-bar">
     <div class="top-bar-right">
-      <ul class="menu top-menu" id="desktopMenu">
+      <ul class="menu top-menu hide" id="desktopMenu">
         <li><%= link_to 'About', '#', class: 'inverse' %></li>
         <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
@@ -10,14 +10,14 @@
         <li><%= link_to 'Contact', new_inquiry_path, class: 'inverse', remote: true %></li>
       </ul>
     </div>
-    <div class='menu-icon hide' id='hamburger'><span>Menu</span></div>
+    <div class='menu-icon' id='hamburger'><span>Menu</span></div>
 
   </nav>
   <div class="statement">
     <p>We make <span class="transparent-statement">custom software</span> for subject matter experts.<span class="emoji">&#128083</span></p>
   </div>
   <div class="cta">
-    <ul class="dropdown menu flex-center top-menu" data-dropdown-menu>
+    <ul class="dropdown menu flex-left top-menu" data-dropdown-menu >
       <li class="border-white">
         <a href="#" class="inverse">my business</a>
         <ul class="menu vertical top-menu">
@@ -35,7 +35,7 @@
         </ul>
       </li>
       <li class="border-white">
-        <a href="#" class="inverse">web applications</a>
+        <a href="#" class="inverse">web application</a>
         <ul class="menu vertical top-menu">
           <li><a href='#' class="inverse">heat</a></li>
           <li><a href='#' class="inverse">dress</a></li>
