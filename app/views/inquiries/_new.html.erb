@@ -14,21 +14,21 @@ We look forward to hearing from you.</h3>
 
       <%= form_for @inquiry do |f| %>
       <fieldset>
-        <div class="row small-10 large-10 column">
+        <div class="row small-10 large-8 column">
           <%= f.text_field :name, placeholder: "Name" %>
         </div>
-
-        <div class="row small-10 large-10 column">
+          
+        <div class="row small-10 large-8 column">
           <%= f.email_field :email, placeholder: "Email address"%>
         </div>
 
-        <div class="row small-10 large-10 column">
+        <div class="row small-10 large-8 column">
           <%= f.text_area :message, placeholder: "Project description"%>
         </div>
       </fieldset>
-
+          <br />
       <fieldset>
-        <div class="row small-10 large-10 column">
+        <div class="row small-10 large-8 column">
           <%= f.submit "Send", class: "button expand" %>
         </div>
       </fieldset>

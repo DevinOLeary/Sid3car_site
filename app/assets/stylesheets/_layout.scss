@@ -4,6 +4,11 @@
   justify-content: space-between;
   flex-direction:column;
 }
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 
 h1, h2, h3, h4, h5, h6, p {
   line-height: 110%;
@@ -33,17 +38,18 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
 }
 .cta {
- width: 80%;
+ width: 97%;
  margin: auto 10%;
 
   ul {
-    display: inline-block;
 
     li{
       margin:5px;
     }
+
   }
 }
+
 .dropdown {
   margin-bottom: 1em;
   li {
@@ -81,6 +87,9 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   ul {
     text-align:center;
+    li {
+      margin-bottom: 10px;
+    }
   }
 
 }
@@ -96,14 +105,7 @@ h1, h2, h3, h4, h5, h6, p {
     min-width:400px;
   }
 }
-.contact_modal {
-  position:fixed;
-  width:100vw;
-  height:100vh;
-  top:0;
-  left:0;
-  z-index: 100;
-}
+
 //bodies of text
 .statement {
   margin-left: 10%;
@@ -148,7 +150,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 8%;
   li {
     margin:.5em 0px;
-    max-width: 500px;
   }
   p {
     width:90%;
@@ -315,14 +316,25 @@ footer {
   .flex-center {
     flex-direction: row;
   }
+  .flex-left {
+    flex-direction: row;
+  }
+  .statement {
+    width:60%;
+
+  }
   .cta {
-    margin-top:100px;
+    margin-top:80px;
+    width: 80%;
   }
   .case_display {
     height:100vh;
   }
   .case_content {
     p {font-size: 21px;}
+  }
+  .work-preview {
+    height: 2650px;
   }
   .fuel article {
     width:560px;
@@ -351,8 +363,9 @@ footer {
 
 @media screen and (min-width: 1025px) {
   .statement {
-    width:50%;
+    width:45%;
   }
+  
     .work-preview {
       height:1700px;
       h6 {

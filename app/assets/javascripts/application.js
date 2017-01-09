@@ -48,10 +48,3 @@ $(function() {
     $("#mobileMenu").addClass('hide');
   });
 });
-
-//open contact modal
-$(function() {
-  $("#contact").on('click', function() {
-    $("#contactModal").removeClass('hide');
-  });
-});
