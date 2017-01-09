@@ -39,8 +39,12 @@ body {
  width: 80%;
  margin: auto 10%;
 
-  ul li {
-    margin:5px;
+  ul {
+    display: inline-block;
+
+    li{
+      margin:5px;
+    }
   }
 }
 .dropdown {
