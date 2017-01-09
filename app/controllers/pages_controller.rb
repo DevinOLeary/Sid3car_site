@@ -8,7 +8,8 @@ class PagesController < ApplicationController
   def case_study
   end
 
-  def about
+  def our_team
+    
   end
 
   def contact

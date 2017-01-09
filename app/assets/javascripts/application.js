@@ -48,3 +48,11 @@ $(function() {
     $("#mobileMenu").addClass('hide');
   });
 });
+
+//on click, open bio container
+$(function() {
+  $("#forrest").on('click', function(e) {
+    $("#bioContainer").toggleClass('hide');
+    $("#hoverPreview").toggleClass('hide');
+  });
+});

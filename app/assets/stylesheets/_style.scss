@@ -124,14 +124,18 @@ h2 {
   color: $inverse;
 }
 .statement {
+    h1 {
+      color: $inverse;
+      font-size: 42px;
+    }
     p {
     display:block;
     color:$inverse;
     font-size:28px;
-    line-height: 60px;
-    i {
-      font-size: 42px;
-    }
+    line-height: 50px;
+  }
+  a {
+    font-size:26px;
   }
   .transparent-statement {
     color: $inverse-transparent;
@@ -206,9 +210,12 @@ h2 {
 }
 footer {
   background-color: $background-footer;
-  li {
+  a {
     color:$footer-dark-text;
     font-size:19px;
+  }
+  a:hover {
+    color:$footer-dark-text;
   }
   p {
     color:$footer-light-text;
@@ -240,9 +247,7 @@ footer {
 }
 
 //figures
-.emoji {
-  margin-left: 10px;
-}
+
 .sid3car-logo {
   background-image: url("Sid3car-white.png");
   background-repeat: no-repeat;
@@ -252,6 +257,30 @@ footer {
   background-image: url("sid3car-logo.png");
   background-repeat: no-repeat;
   background-size: 120px 40px;
+}
+
+.image-container {
+  .profile-pic {
+    .hover-preview {
+      background-color: $background-blue-transparent;
+      color: $inverse;
+      ul {
+        text-indent: 3px;
+        li {
+          line-height:20px;
+          h6 {
+            text-align: center;
+            font-size: 24px;
+            font-weight:300;
+          }
+        }
+      }
+    }
+    .bio-container {
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+    }
+  }
 }
 
 //buttons

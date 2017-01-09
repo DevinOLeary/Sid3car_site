@@ -1,0 +1,94 @@
+<header class="masthead-background">
+  <div><%= link_to "", root_path, class: "sid3car-logo" %></div>
+  <nav class="top-bar" >
+    <div class="top-bar-right">
+      <ul class="menu top-menu hide" id="desktopMenu">
+        <li><%= link_to 'About Us', our_team_path, class: 'inverse' %></li>
+        <li><%= link_to 'Portfolio', case_study_path, class: 'inverse' %></li>
+        <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
+        <li><%= link_to 'Contact', new_inquiry_path, class: 'inverse', remote: true %></li>
+      </ul>
+    </div>
+    <div class='menu-icon' id='hamburger'>Menu</div>
+  </nav>
+
+
+    <hgroup>
+      <div class="statement">
+        <h1>Honest. <span class="transparent-statement">Trustworthy.</span> Cool People.</h1>
+        <div><%= link_to 'How can we help?', new_inquiry_path, class: 'white-link', remote: true %></div>
+      </div>
+
+    </hgroup>
+  <section class="intro">
+    <p>XOXO tilde irony Kickstarter, McSweeney's Intelligentsia keytar
+      distillery. Direct trade farm-to-table asymmetrical synth mixtape.
+      Photo booth sartorial bitters Austin banh mi. Kickstarter try-hard
+      ethical Odd Future Intelligentsia wayfarers cardigan 90's lumbersexual. </p>
+  </section>
+</header>
+<section class="team-container">
+
+  <div class="image-container flex-center large-10">
+    <h2 class="flex-center"> The Team </h2>
+    <div class="profile-pic flex-left" id="forrest">
+      <%= image_tag 'Forrest.png' %>
+      <div class="hover-preview" id="hoverPreview">
+        <ul>
+          <li><h6>Forrest Fowler</h6></li>
+          <li>Founder</li>
+          <li>Heavyweight, full-stack developer</li>
+        </ul>
+      </div>
+      <article class="bio-container hide" id="bioContainer">
+        <hgroup class="center">
+          <h1>Forrest Fowler</h1>
+          <h5>Founder</h5>
+        </hgroup>
+        <p>XOXO tilde irony Kickstarter, McSweeney's Intelligentsia keytar
+          distillery. Direct trade farm-to-table asymmetrical synth mixtape.
+          Photo booth sartorial bitters Austin banh mi. Kickstarter try-hard
+          ethical Odd Future Intelligentsia wayfarers cardigan 90's
+          lumbersexual.</p>
+          <section>
+            <h3 class="center">Projects</h3>
+            <ul class="flex-center">
+              <li></li>
+            </ul>
+          </section>
+          <div class="center"><%= link_to 'View more of Forrest\'s work', '#' %> </div>
+      </article>
+    </div>
+    <div class="profile-pic" id="">
+      <%= image_tag 'Tyler.png' %>
+      <div class="hover-preview">
+        <ul>
+          <li><h6>Tyler Henke</h6></li>
+          <li>Founder</li>
+          <li>Graphic Desiger</li>
+        </ul>
+      </div>
+    </div>
+    <div class="profile-pic" id=""><%= image_tag 'Forrest.png' %>
+      <div class="hover-preview">
+        <ul>
+          <li><h6>Forrest Fowler</h6></li>
+          <li>Founder</li>
+          <li>Heavyweight, full-stack developer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <ul class="menu small-12 large-6 columns">
+    <li><%= link_to 'Our Team', our_team_path %></li>
+    <li><%= link_to 'Portfolio', case_study_path %></li>
+    <li><%= link_to 'Cowork', '#' %></li>
+    <li><%= link_to 'Contact', new_inquiry_path, remote: true %></li>
+  </ul>
+  <p class="align-right small-12 large-6 columns">
+    Made with <span class="em em-heart"></span> in <a href="#" class="to-link">Bloomington, IN</a>
+  </p>
+</footer>
