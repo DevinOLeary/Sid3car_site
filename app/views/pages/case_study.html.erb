@@ -3,14 +3,14 @@
   <nav class="top-bar HQE-background" >
     <div class="top-bar-right">
       <ul class="menu top-menu hide" id="desktopMenu">
-        <li><%= link_to 'About', '#', class: 'inverse' %></li>
+        <li><%= link_to 'About Us', our_team_path, class: 'inverse' %></li>
         <li><%= link_to 'Portfolio', '#', class: 'inverse' %></li>
         <li><%= link_to 'Cowork', '#', class: 'inverse' %></li>
         <li><%= link_to 'Decal', '#', class: 'inverse' %></li>
         <li><%= link_to 'Contact', new_inquiry_path, class: 'inverse', remote: true %></li>
       </ul>
     </div>
-    <div class='menu-icon' id='hamburger'><i>Menu</i></div>
+    <div class='menu-icon' id='hamburger'>Menu</div>
   </nav>
   <div class="clearfix"></div>
   <section class="intro">
@@ -87,12 +87,12 @@
 </section>
 <footer>
   <ul class="menu small-12 large-6 columns">
-    <li>About</li>
-    <li>Portfolio</li>
-    <li>Cowork</li>
-    <li>Contact</li>
+    <li><%= link_to 'Our Team', our_team_path %></li>
+    <li><%= link_to 'Portfolio', case_study_path %></li>
+    <li><%= link_to 'Cowork', '#' %></li>
+    <li><%= link_to 'Contact', new_inquiry_path, remote: true %></li>
   </ul>
   <p class="align-right small-12 large-6 columns">
-    Made with <i class="em em-heart"></i> in <a href="#" class="to-link">Bloomington, IN</a>
+    Made with <span class="em em-heart"></span> in <a href="#" class="to-link">Bloomington, IN</a>
   </p>
 </footer>

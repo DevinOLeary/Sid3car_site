@@ -1,6 +1,7 @@
 //Colors
 $orange-text: #FF7F2E;
-$orange-mask: #FD8F61;
+$orange-mask: rgb(253,143,97);
+$orange-transparent: rgba(253,143,97,0.9);
 $text: #3E474F;
 $grey-light: #F7F7F7;
 $grey: #EDEFF0;
@@ -11,7 +12,8 @@ $inverse: rgb(255,255,255);
 $inverse-transparent: rgba(255,255,255,0.6);
 $clear: rgba(0,0,0,0);
 $black: rgba(0,0,0,0.1);
-$blue: #2685EA;
+$blue: rgb(38,133,234);
+$blue-transparent: rgba(38,133,234,.85);
 $blue-link: #2E87E7;
 $blue-dark: #1E7ADB;
 $blue-light: #CBE9FF;
@@ -20,7 +22,9 @@ $HQE-background: #4083A0;
 
 $background-grey: $grey-light;
 $background-orange: $orange-mask;
+$background-orange-transparent: $orange-transparent;
 $background-blue: $blue;
+$background-blue-transparent: $blue-transparent;
 $background-dark-grey: $grey-dark;
 $background-grey-transparent: $grey-dark-transparent;
 
