@@ -279,9 +279,20 @@ footer {
 }
 
 .team-container {
+
+
   .image-container {
     width:100%;
     padding:10% 0;
+    position:relative;
+    h2 {
+      order: -2;
+    }
+    #bio-exit {
+      position: absolute;
+      right:5%;
+      top:5%;
+    }
     img {
     width:218px;
     min-width:218px;
@@ -290,6 +301,9 @@ footer {
     }
     h2 {
       flex-basis: 100%;
+    }
+    .primary-profile {
+      order: -1;
     }
     .profile-pic {
       position: relative;
@@ -314,6 +328,7 @@ footer {
       padding:2em;
       margin-left: 10%;
       margin-right:10%;
+
       p {
         width:90%;
         margin: 1em auto;
@@ -321,11 +336,13 @@ footer {
       }
     }
     }
+
     .profile-pic:hover {
       cursor: pointer;
       .hover-preview {
         height:100px;
       }
+
     }
 
   }
