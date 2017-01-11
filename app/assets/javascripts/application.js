@@ -49,10 +49,26 @@ $(function() {
   });
 });
 
+//exit bio when X is clicked
+$(function() {
+  $("#bio-exit").on('click', function() {
+    $(".bio-container").hide()
+    $(".hover-preview").show();
+    $("#bio-exit").hide();
+  });
+});
+
 //on click, open bio container
 $(function() {
-  $("#forrest").on('click', function(e) {
-    $("#bioContainer").toggleClass('hide');
-    $("#hoverPreview").toggleClass('hide');
+  $("#bio-exit").hide();
+  $(".bio-container").hide();
+  $(".profile-pic").on('click', function() {
+    $("#bio-exit").show();
+    $(".hover-preview").show();
+    $(".bio-container").hide();
+    $(".profile-pic").removeClass('primary-profile');
+    $(this).addClass('primary-profile');
+    $(this).find(".bio-container").show();
+    $(this).find(".hover-preview").hide();
   });
 });
