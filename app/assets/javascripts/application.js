@@ -52,7 +52,7 @@ $(function() {
 //exit bio when X is clicked
 $(function() {
   $("#bio-exit").on('click', function() {
-    $(".bio-container").hide()
+    $(".bio-container").hide();
     $(".hover-preview").show();
     $("#bio-exit").hide();
   });
@@ -63,12 +63,12 @@ $(function() {
   $("#bio-exit").hide();
   $(".bio-container").hide();
   $(".profile-pic").on('click', function() {
-    $("#bio-exit").show();
+    $("#bio-exit").fadeIn(600);
     $(".hover-preview").show();
     $(".bio-container").hide();
     $(".profile-pic").removeClass('primary-profile');
-    $(this).addClass('primary-profile');
-    $(this).find(".bio-container").show();
+    $(this).addClass('primary-profile').hide().fadeIn(600);
+    $(this).find(".bio-container").fadeIn(600);
     $(this).find(".hover-preview").hide();
   });
 });

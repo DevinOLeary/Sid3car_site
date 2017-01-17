@@ -284,6 +284,7 @@ footer {
   }
 }
 
+
 //buttons
 .button {
   background-color:$inverse;
@@ -315,6 +316,9 @@ footer {
 }
 .exit:hover {
   cursor: pointer;
+}
+#bio-exit {
+  font-size:3em;
 }
 
 .top-menu .subpage-contact {
